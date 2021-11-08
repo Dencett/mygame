@@ -6,7 +6,7 @@ pygame.init()
 WINDOWWIDTH = 1000
 WINDOWHEIGHT = 1000
 
-FPS = 400  # число кадров в секунду
+FPS = 400
 clock = pygame.time.Clock()
 
 
@@ -38,6 +38,7 @@ windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 pygame.display.set_caption('Моя первая игра')
 
 pygame.mouse.set_visible(False)
+
 
 def font(size):
     return pygame.font.SysFont(None, size)
@@ -140,8 +141,13 @@ def reached_position(d_enemy, enemy_data, corner_blocks):
 
 
 windowSurface.fill(SURFACE_COLOR)
-drawText('Моя игра!', font(50), windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3))
-drawText('Нажмите клавишу для начала игры', font(50), windowSurface, (WINDOWWIDTH / 5) - 30, (WINDOWHEIGHT / 3) + 50)
+drawText('Моя игра!', font(100), windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3) - 50)
+drawText('Нажмите клавишу или мышь для начала игры', font(50), windowSurface, (WINDOWWIDTH / 5) - 90,
+         (WINDOWHEIGHT / 3) + 50)
+drawText('Задача: унчтожить мины, чтобы не дошли до базы.',
+         font(40), windowSurface, (WINDOWWIDTH / 5) - 60, (WINDOWHEIGHT / 3) + 150)
+drawText('При уничтожении 4 мин сразу мины осиаются на месте.',
+         font(40), windowSurface, (WINDOWWIDTH / 5) - 60, (WINDOWHEIGHT / 3) + 180)
 pygame.display.update()
 waitForPlayerToPressKey()
 
