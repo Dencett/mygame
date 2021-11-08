@@ -140,7 +140,7 @@ def reached_position(d_enemy, enemy_data, corner_blocks):
 
 
 windowSurface.fill(SURFACE_COLOR)
-drawText('Ловкач', font(50), windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3))
+drawText('Моя игра!', font(50), windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3))
 drawText('Нажмите клавишу для начала игры', font(50), windowSurface, (WINDOWWIDTH / 5) - 30, (WINDOWHEIGHT / 3) + 50)
 pygame.display.update()
 waitForPlayerToPressKey()
