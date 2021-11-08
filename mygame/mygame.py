@@ -144,9 +144,9 @@ windowSurface.fill(SURFACE_COLOR)
 drawText('Моя игра!', font(100), windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3) - 50)
 drawText('Нажмите клавишу или мышь для начала игры', font(50), windowSurface, (WINDOWWIDTH / 5) - 90,
          (WINDOWHEIGHT / 3) + 50)
-drawText('Задача: унчтожить мины, чтобы не дошли до базы.',
+drawText('Задача: уничтожить мины, чтобы не дошли до базы.',
          font(40), windowSurface, (WINDOWWIDTH / 5) - 60, (WINDOWHEIGHT / 3) + 150)
-drawText('При уничтожении 4 мин сразу мины осиаются на месте.',
+drawText('При уничтожении 4 мин сразу мины остаются на месте.',
          font(40), windowSurface, (WINDOWWIDTH / 5) - 60, (WINDOWHEIGHT / 3) + 180)
 pygame.display.update()
 waitForPlayerToPressKey()
